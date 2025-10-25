@@ -1,0 +1,11 @@
+Dependent Class,Form1,MainWindow,Program,FormConfig,Program,WpfWindowInfo,FormWindowInfo,MainForm,ProgramConfig,CalculatorController,FormWindowInfo,FormConfig,ProgramConfig,WpfWindowInfo,CalculatorController,IWindowInfo,MainForm,IsolatedStream,CalculatorState
+Form1,,,,2,,,4,,4,,4,2,4,,,,,,
+MainWindow,,,,,,2,,,,31,,,,2,31,,,,
+Program,3,,,,,,,,,,,,,,,,,,
+FormConfig,,,,,,,,,12,,,,12,,,14,,,
+Program,,,,,,,,3,,,,,,,,,3,,
+WpfWindowInfo,,,,,,,,,,,,,,,,15,,,
+FormWindowInfo,,,,,,,,,,,,,,,,15,,,
+MainForm,,,,,,,2,,,34,2,,,,34,,,,
+ProgramConfig,,,,,,,,,,,,,,,,,,12,
+CalculatorController,,,,2,,,,,4,,,2,4,,,35,,,53

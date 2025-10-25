@@ -1,0 +1,63 @@
+/* ------------------------------------------------------------ */
+/* created with bunch v3 */
+/* Objective Function value = 0.1875*/
+/* ------------------------------------------------------------ */
+
+digraph G {
+size= "10,10";
+rotate = 90;
+subgraph cluster0 {
+label = "(SS-L0):MainForm";
+color = black;
+style = bold;
+
+"Program"[label="Program",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"MainForm"[label="MainForm",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster1 {
+label = "(SS-L0):CalculatorController";
+color = black;
+style = bold;
+
+"FormWindowInfo"[label="FormWindowInfo",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"IWindowInfo"[label="IWindowInfo",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"FormConfig"[label="FormConfig",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"Form1"[label="Form1",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"CalculatorState"[label="CalculatorState",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"CalculatorController"[label="CalculatorController",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster2 {
+label = "(SS-L0):MainWindow";
+color = black;
+style = bold;
+
+"WpfWindowInfo"[label="WpfWindowInfo",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"MainWindow"[label="MainWindow",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+subgraph cluster3 {
+label = "(SS-L0):ProgramConfig";
+color = black;
+style = bold;
+
+"IsolatedStream"[label="IsolatedStream",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+"ProgramConfig"[label="ProgramConfig",shape=ellipse,color=lightblue,fontcolor=black,style=filled];
+}
+"MainForm" -> "CalculatorController" [color=blue,font=6];
+"MainForm" -> "FormWindowInfo" [color=blue,font=6];
+"CalculatorController" -> "CalculatorState" [color=blue,font=6];
+"CalculatorController" -> "IWindowInfo" [color=blue,font=6];
+"CalculatorController" -> "FormConfig" [color=blue,font=6];
+"CalculatorController" -> "ProgramConfig" [color=blue,font=6];
+"Program" -> "MainForm" [color=blue,font=6];
+"Program" -> "Form1" [color=blue,font=6];
+"MainWindow" -> "WpfWindowInfo" [color=blue,font=6];
+"MainWindow" -> "CalculatorController" [color=blue,font=6];
+"Form1" -> "FormConfig" [color=blue,font=6];
+"Form1" -> "ProgramConfig" [color=blue,font=6];
+"Form1" -> "FormWindowInfo" [color=blue,font=6];
+"FormConfig" -> "IWindowInfo" [color=blue,font=6];
+"FormConfig" -> "ProgramConfig" [color=blue,font=6];
+"FormWindowInfo" -> "IWindowInfo" [color=blue,font=6];
+"WpfWindowInfo" -> "IWindowInfo" [color=blue,font=6];
+"ProgramConfig" -> "IsolatedStream" [color=blue,font=6];
+}
